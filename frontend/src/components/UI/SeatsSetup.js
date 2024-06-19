@@ -14,8 +14,8 @@ const SeatsInput = ({
 
   useEffect(() => {
     // Update the input value whenever noOfSeat[text] changes
-    setInputValue(noOfSeat?.[text] || "");
-  }, [noOfSeat?.[text] ]);
+    setInputValue(noOfSeat,text || "");
+  }, [noOfSeat,text]);
 
   // this function will  handle the change in seat input and update the state and local storage
   const change_seats = (e) => {
